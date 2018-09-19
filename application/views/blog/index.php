@@ -1,5 +1,9 @@
     <main role="main" class="container" style="padding-top: 100px;">
-      <a href="">Add Blog</a>
+      <a href="<?php echo BASE_URL('blogs/add'); ?>">Add Blog</a>
+
+      <?php
+         echo BASE_URL;
+      ?>
       <div class="table">
         <table class="table table-hover">
           <thead>

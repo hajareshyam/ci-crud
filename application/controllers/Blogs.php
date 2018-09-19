@@ -23,10 +23,7 @@ class Blogs extends CI_Controller {
 	public function add(){
 		$data = array();
 		$postData = array();
-
 		if($this->input->post('blogSubmit')){
-
-
 			//form field validation rules
             $this->form_validation->set_rules('title', 'blog title', 'required');
             $this->form_validation->set_rules('content', 'blog content', 'required');
@@ -36,10 +33,15 @@ class Blogs extends CI_Controller {
 				'blog_title' => $this->input->post('title'),
 				'blog_description' => $this->input->post('content')
 			);
-			
+
 			if($this->form_validation->run() == true){
                 //insert post data
 				$insert = $this->blog->insert($postData);
+				if($insert){
+                    redirect('/blogs');
+                }else{
+                    $data['error_msg'] = 'Some problems occurred, please try again.';
+                }
 			}
 		}
 
