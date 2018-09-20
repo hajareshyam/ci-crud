@@ -49,7 +49,10 @@ class Blog extends CI_Model{
         return $query->num_rows();
     }
 
-    public function blogList($limit,$offset){
-            
+    function getAllBlogs($limit,$offset){
+        $this->db->limit($limit);
+        $this->db->offset($offset);
+        $this->db->order_by('blog_id DESC');
+        return $this->db->get('blog')->result();
     }
 }

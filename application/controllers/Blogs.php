@@ -10,16 +10,17 @@ class Blogs extends CI_Controller {
 		$this->load->model('blog');
 	}
 
-	public function index(){
+	public function index($offset=0){
 		$this->load->library('pagination');
 
-		$config['base_url'] = base_url('blogs');
+		$config['base_url'] = base_url('blogs/index');
 		$config['total_rows'] = $this->blog->blogCount();
 		$config['per_page'] = 2;
 
 		$this->pagination->initialize($config);	
 		$data = array();
-		$data['blogs'] = $this->blog->getBlogs();
+		// $data['blogs'] = $this->blog->getBlogs();
+		$data['blogs'] = $this->blog->getAllBlogs($config['per_page'],$offset);
 
 		//load the list page view
 		$this->load->view('templates/header', $data);

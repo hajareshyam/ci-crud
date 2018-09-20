@@ -12,6 +12,8 @@
           </thead>
           <tbody>
             <?php foreach ($blogs as $blog): ?>
+            <?php $blog = (array) $blog;  ?>
+              
               <tr>
                 <th scope="row"><?php echo $blog['blog_id']; ?></th>
                 <td><?php echo $blog['blog_title']; ?></td>
