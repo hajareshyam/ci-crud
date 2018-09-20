@@ -11,6 +11,13 @@ class Blogs extends CI_Controller {
 	}
 
 	public function index(){
+		$this->load->library('pagination');
+
+		$config['base_url'] = base_url('blogs');
+		$config['total_rows'] = $this->blog->blogCount();
+		$config['per_page'] = 2;
+
+		$this->pagination->initialize($config);	
 		$data = array();
 		$data['blogs'] = $this->blog->getBlogs();
 
@@ -56,6 +63,73 @@ class Blogs extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function delete($id = ''){
+		if ($id){
+			//delete post
+            $delete = $this->blog->delete($id);
+            if ($delete) {
+            	
+            }else{
+
+            }
+		}	
+		redirect('/blogs');
+	}
+
+	public function view($id = ''){
+		$data = array();
+		$postData = array();
+		if ($id){
+			$data['blog'] = $this->blog->getBlog($id);
+            
+            //load the details page view
+            $this->load->view('templates/header', $data);
+            $this->load->view('blog/view', $data);
+            $this->load->view('templates/footer');
+		}else{
+			redirect('/blogs');
+		}	
+	}
+
+	public function edit($id = ''){
+		$data = array();
+        
+        //get post data
+        $postData = $this->blog->getBlog($id);
+       	
+       	//if update request is submitted
+        if($this->input->post('blogSubmit')){
+			
+			//form field validation rules
+        	$this->form_validation->set_rules('title', 'Blog title', 'required');
+            $this->form_validation->set_rules('content', 'Blog Description', 'required');
+            
+            $postData = array(
+                'blog_title' => $this->input->post('title'),
+                'blog_description' => $this->input->post('content')
+            );
+
+            if($this->form_validation->run() == true){
+            	//update post data
+            	$update = $this->blog->update($postData, $id);
+            	if ($update) {
+            		redirect('/blogs');
+            	}else{
+
+            	}
+            }
+
+        }
+
+        $data['blog'] = $postData;
+        $data['title'] = 'Update Blog';
+        $data['action'] = 'Edit';
+        
+        //load the edit page view
+        $this->load->view('templates/header', $data);
+        $this->load->view('blog/edit', $data);
+        $this->load->view('templates/footer');
+	}
 
 }
 
