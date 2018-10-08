@@ -526,9 +526,15 @@ div.zone_over
     <page_header>
         <table style="width: 100%; border: solid 1px black;">
             <tr>
-                <td style="text-align: left;    width: 33%">html2pdf</td>
-                <td style="text-align: center;    width: 34%">Test d'header</td>
-                <td style="text-align: right;    width: 33%"><?php echo date('d/m/Y'); ?></td>
+                <td style="text-align: left;    width: 50%">
+                    <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
+
+                </td>
+                <td style="text-align: right;    width: 50%">
+
+                    <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
+
+                </td>
             </tr>
         </table>
     </page_header>

@@ -18,6 +18,13 @@ td{
     padding-left:15px;
     
 }
+
+td,th{
+    padding: 5px;
+}
+h1,h2,h3,h4,h5{
+    color:#008C46;
+}
 </style>
 <page backimg="<?php echo base_url(); ?>/assets/cover.png" backimgx="center" backimgy="bottom" backimgw="100%" backtop="0" backbottom="30mm" style="font-size: 12pt">
     <page_footer>
@@ -33,11 +40,11 @@ td{
                     <td style="border: 0px solid black; text-align: right;    width: 50%"><h4>Customer Location: Chennai</h4></td>
                 </tr>
             </table>
-
-            <table style=" border: 0px solid black; width: 100%; border: solid 1px black;margin-top:40px">
+            
+            <table style=" border: 0px solid black; width: 100%; border: solid 1px black;margin-top:40px; ">
                 <tr>
-                    <td style="border: 0px solid black; text-align: left;    width: 60%"><h4>Customer key contacts: Mr. Shaizaad - Plant Head</h4> </td>
-                    <td style="border: 0px solid black; text-align: right;    width: 40%"> <h4>Mr.Mayur Purchase Manager </h4> </td>
+                    <td style="border: 0px solid black; text-align: left; width: 60%"><h4>Customer key contacts: Mr. Shaizaad - Plant Head</h4> </td>
+                    <td style="border: 0px solid black; text-align: right; width: 40%"> <h4>Mr.Mayur Purchase Manager </h4> </td>
                 </tr>
             </table>
        </div>
@@ -121,6 +128,7 @@ td{
                     </tr>
                 </table>
                 <p>Key client: Hyundai, Ford, Renault Nissan,VW,Lamborghini</p>
+                <br>
            </div>
 
             <div class="section">
@@ -141,6 +149,7 @@ td{
 
             <div class="section" style="padding-top:20px;">
                 <b>MWF Annual Consumption - XX KL</b>
+                <br><br>
                 <table style="border: solid 1px #5544DD; border-collapse: collapse;">
                     <tr>
                         <th>Suppier</th>
@@ -165,6 +174,7 @@ td{
 
             <div class="section" style="padding-top:20px;">
                 <b>Rust Preventive: Annual consumption YYKL</b>
+                <br><br>
                 <table style="border: solid 1px #5544DD; border-collapse: collapse;">
                     <tr>
                         <th>Suppier</th>
@@ -189,6 +199,7 @@ td{
 
             <div class="section" style="padding-top:20px;">
                 <b>Hydraulic oil: Annual Consumption ZZKL</b>
+                <br><br>
                 <table style="border: solid 1px #5544DD; border-collapse: collapse;">
                     <tr>
                         <th>Suppier</th>
@@ -275,36 +286,40 @@ td{
     <img align="left" style="width: 100%;" src="<?php echo base_url(); ?>/assets/second.png" alt="Logo Html2Pdf" >
     </page_header> 
     <div class="page-body" style="margin-top:150px; padding:10px;">
-    <h2>Metal Working Fluid consumption</h2>
-        <div class="section-graph">
-            <div style="width: 100%; text-align: center;">
-                <div style="text-align: left; width: 10%;"><b>Ltrs:</b></div> 
-                <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
-                    <h4>Display basic value Calculation</h4>
-            </div>
+        <h4>Metal Working Fluid Consumption</h4>
+        <?php for($i=0; $i< 2; $i++): ?>
+        <table align="center" style="width: 100%;" >
+                <tr>    
+                    <td style="border: 0px solid black; width: 5%">
+                        <strong>Ltrs</strong>
+                    </td>
+                    <td style=" border: 0px solid black; width: 30%">
+                        <img style="height:200px" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
+                    </td>
+                    <td style="border: 0px solid black;width: 60%">
+                       <strong>Vol Savings XXXX LTRS YY%</strong>
+                    </td>
+                </tr>
+            </table>
+        <?php endfor; ?>
+
+        <h4>Water consumption</h4>
+        <?php for($i=0; $i< 2; $i++): ?>
+        <table align="center" style="width: 100%;" >
+                <tr>    
+                    <td style="border: 0px solid black; width: 5%">
+                        <strong>Ltrs</strong>
+                    </td>
+                    <td style=" border: 0px solid black; width: 30%">
+                        <img style="height:200px"; src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
+                    </td>
+                    <td style="border: 0px solid black;width: 60%">
+                       <strong>Vol Savings XXXX LTRS YY%</strong>
+                    </td>
+                </tr>
+            </table>
+        <?php endfor; ?>
         </div>
-        <div class="section-graph">
-            <div style="width: 100%; text-align: center;">
-                <div style="text-align: left; width: 10%;"><b>Ltrs:</b></div> 
-                <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
-                    <h4>Display basic value Calculation</h4>
-            </div>
-        </div>
-        <div class="section-graph">
-            <div style="width: 100%; text-align: center;">
-                <div style="text-align: left; width: 10%;"><b>Ltrs:</b></div> 
-                <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
-                    <h4>Display basic value Calculation</h4>
-            </div>
-        </div>
-        <div class="section-graph">
-            <div style="width: 100%; text-align: center;">
-                <div style="text-align: left; width: 10%;"><b>Ltrs:</b></div> 
-                <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
-                    <h4>Display basic value Calculation</h4>
-            </div>
-        </div>
-    </div>
 </page>
 
 <page> 
@@ -313,21 +328,39 @@ td{
     </page_header> 
     <div class="page-body" style="margin-top:150px; padding:10px;">
     <h2>Productivity</h2>
-        <div class="section-graph">
-            <div style="width: 100%; text-align: center;">
-                <div style="text-align: left; width: 10%;"><b>Ltrs:</b></div> 
-                <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
-                    <h4>Display basic value Calculation</h4>
-            </div>
-        </div>
-        <div class="section-graph">
-            <div style="width: 100%; text-align: center;">
-                <div style="text-align: left; width: 10%;"><b>Ltrs:</b></div> 
-                <img style="text-align: center; width: 30%" src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
-                    <h4>Display basic value Calculation</h4>
-            </div>
-        </div>
+    <h4>Downtime (Machine and Man Power)</h4>
+    <?php for($i=0; $i< 1; $i++): ?>
+        <table align="center" style="width: 100%;" >
+                <tr>    
+                    <td style="border: 0px solid black; width: 5%">
+                        <strong>Ltrs</strong>
+                    </td>
+                    <td style=" border: 0px solid black; width: 30%">
+                        <img style="height:200px"; src="<?php echo base_url(); ?>/assets/pieChart.png" alt="Logo Html2Pdf" >
+                    </td>
+                    <td style="border: 0px solid black;width: 60%">
+                       <strong>Vol Savings XXXX LTRS YY%</strong>
+                    </td>
+                </tr>
+            </table>
+        <?php endfor; ?>
 
+        <h4>Benifit (Machine and Man Power)</h4>
+        <?php for($i=0; $i< 1; $i++): ?>
+        <table align="center" style="width: 100%;" >
+                <tr>    
+                    <td style="border: 0px solid black; width: 5%">
+                        <strong>Inr</strong>
+                    </td>
+                    <td style=" border: 0px solid black; width: 30%">
+                        <img style="height:200px"; src="<?php echo base_url(); ?>/assets/gbgraph.png" alt="Logo Html2Pdf" >
+                    </td>
+                    <td style="border: 0px solid black;width: 60%">
+                       <strong>Vol Savings XXXX LTRS YY%</strong>
+                    </td>
+                </tr>
+            </table>
+        <?php endfor; ?>
     </div>
 </page>
 
