@@ -20,9 +20,10 @@ class Pdf extends CI_Controller
         try {
             ob_start();
             $this->load->view('html2pdf');
-            // $this->load->view('graph');
-			$content = ob_get_clean();
+            $this->load->view('graph');
+            $content = ob_get_clean();
             $html2pdf = new Html2Pdf('P', 'A4', 'en', false, 'UTF-8', 0);
+            $html2pdf->setDefaultFont("opensans");
             $html2pdf->writeHTML($content);
             $html2pdf->output('example06.pdf');
         } catch (Html2PdfException $e) {
@@ -82,9 +83,10 @@ class Pdf extends CI_Controller
         
         // Create the bar plots
         $b1plot = new BarPlot($data1y);
-        $b1plot->SetFillColor("orange");
+        // $b1plot->SetFillColor('black');
+        $b1plot->SetFillColor('#E234A9'); 
         $b2plot = new BarPlot($data2y);
-        $b2plot->SetFillColor("blue");
+        // $b2plot->SetFillColor("blue");
         
         // Create the grouped bar plot
         $gbplot = new GroupBarPlot(array($b1plot,$b2plot));
@@ -92,9 +94,9 @@ class Pdf extends CI_Controller
         // ...and add it to the graPH
         $graph->Add($gbplot);
         
-        $graph->title->Set("Example 21");
+        // $graph->title->Set("Example 21");
         $graph->xaxis->SetTickLabels(array('Product 1','Product 2'));
-        $graph->yaxis->title->Set("Y-title");
+        // $graph->yaxis->title->Set("Y-title");
         
         $graph->title->SetFont(FF_FONT1,FS_BOLD);
         $graph->yaxis->title->SetFont(FF_FONT1,FS_BOLD);
