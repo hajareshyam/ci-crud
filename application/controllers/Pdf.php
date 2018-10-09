@@ -20,10 +20,9 @@ class Pdf extends CI_Controller
         try {
             ob_start();
             $this->load->view('html2pdf');
-            $this->load->view('graph');
             $content = ob_get_clean();
             $html2pdf = new Html2Pdf('P', 'A4', 'en', false, 'UTF-8', 0);
-            $html2pdf->setDefaultFont("opensans");
+            $html2pdf->setDefaultFont("times");
             $html2pdf->writeHTML($content);
             $html2pdf->output('example06.pdf');
         } catch (Html2PdfException $e) {

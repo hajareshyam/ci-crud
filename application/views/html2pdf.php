@@ -1,39 +1,26 @@
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-
 <style type="text/css">
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-/* td{
-    padding-left:20px;
-    padding-right:20px; */
-/* }
-.section{
-    padding: 0px 10px 0px 10px;
-} */
-/* .section p{
-    padding-left:15px;
-    
-} */
-/* li{
-    padding:3px;
-} */
- td,th{
+td,th{
     padding: 5px;
+}
+p,table{
+    padding-left:25px;
 }
 h1,h2,h3,h4,h5{
     color:#008C46;
 } 
-.tabledata {
-	/* font-family: 	Arial, Verdana, sans-serif; */
-	/* color:		#0000FF; */
-	font-size:	15px;
+td,p{font-size:17px;}
+th{
+    background-color: #F4F4F4;
+}
+.tabledata{
+    font-size:17px;
 }
 </style>
-<page  backimg="<?php echo base_url(); ?>/assets/cover.png" backimgx="center" backimgy="bottom" backimgw="100%" backtop="0" backbottom="30mm" style="font-size: 12pt">
+<page  backimg="<?php echo base_url(); ?>/assets/cover.png" backimgx="center" backimgy="bottom" backimgw="100%" backtop="0" backbottom="30mm">
     <page_footer>
        <div class="section" style="background:#E60123; width:100%; color:white">
             <table style="border: 0px solid black; width: 100%; border: solid 1px black;padding-left:20px;padding-right:20px;">
@@ -69,213 +56,238 @@ h1,h2,h3,h4,h5{
          Castrol is a leading manufacturer, distributor and marketer of premium lubricating oils, greases and related services to automotive, industrial, marine, oil exploration and production customers across the world. Headquartered in the UK, Castrol operates directly in over 40 countries, and employs approximately 7,000 people worldwide. Third party distributors market and sell our products locally in nearly 100 other markets. Our delivery network extends throughout 140 countries, covering 800 ports and partnering with over 2000 distributors and agents. 
          <br>
          <br>
-         Castrol is a leading manufacturer, distributor and marketer of premium lubricating oils, greases and related services to automotive, industrial, marine, oil exploration and production customers across the world. Headquartered in the UK, Castrol operates directly in over 40 countries, and employs approximately 7,000 people worldwide. Third party distributors market and sell our products locally in nearly 100 other markets. Our delivery network extends throughout 140 countries, covering 800 ports and partnering with over 2000 distributors and agents.         
+         Castrol is a leading manufacturer, distributor and marketer of premium lubricating oils, greases and related services to automotive, industrial, marine, oil exploration and production customers across the world. Headquartered in the UK, Castrol operates directly in over 40 countries, and employs      
          </p>
     </div>
 </page>
 
 
-<page backimg="<?php echo base_url(); ?>/assets/cover-page.jpg" backimgw="100%" backleft="10mm" backright="10mm" backtop="155px"  pagegroup="new"> 
+<page backimg="<?php echo base_url(); ?>/assets/cover-page.jpg" backimgw="100%" backleft="10mm" backright="10mm" backtop="155px"  pagegroup="new" style="font-size: 12pt"> 
     <page_header> 
-    <img style="width: 100%;" src="<?php echo base_url(); ?>/assets/second.png" alt="Logo Html2Pdf" >
+        <img style="width: 100%;" src="<?php echo base_url(); ?>/assets/second.png" alt="Logo Html2Pdf" >
     </page_header> 
-        <div>
-            <img align="left" style="width: 30px; height:30px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" >
-            <h4 align="left" ><strong>Porpose of the value offer</strong></h4>
-        </div>
-            <p>To provide a value offer helping cost per component of the coolent unsed to improve productivity & optimize inventory</p>  
+        <table style="border: 0px solid black;">
+            <tr>
+                <td style="border: 0px solid black;"><img style="width: 50px; height:50px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                <td style="border: 0px solid black;"><h3 ><strong>Porpose of the value offer</strong></h3></td>
+            </tr>
+        </table>
+        <p>To provide a value offer helping cost per component of the coolent unsed to improve productivity & optimize inventory To provide a value offer helping cost per component of the co To provide a value offer helping cost per component of the co</p>  
+
+        <table>
+            <tr>
+                <td style="border: 0px solid black;"><img style="width: 50px; height:50px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                <td style="border: 0px solid black;"><h3>Customer Business Details</h3></td>
+            </tr>
+        </table>
+        <p><b>Sector: Automotive Component Manufacturer</b><br>
+        Manifacturing facility details</p>
+                
+        <table style="border: solid 1px #5544DD; border-collapse: collapse;">
+            <tr>
+                <th>Plant</th>
+                <th>Component Mfd</th>
+                <th>Capacity/Annum</th>
+                <th>Utilization</th>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+        </table>
         
-           <div>
-                <img align="left" style="width: 40px; height:40px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" >
-                <h4 align="left" > <strong>Customer Business Details</strong> </h4>
-           </div>
-                <b>Sector: Automotive Component Manufacturer</b>
-                Manifacturing facility details
-                <br><br>
-                <table style="border: solid 1px #5544DD; border-collapse: collapse;">
-                    <tr>
-                        <th>Plant</th>
-                        <th>Component Mfd</th>
-                        <th>Capacity/Annum</th>
-                        <th>Utilization</th>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                </table>
-                <br>
-                <p>Key client: Hyundai, Ford, Renault Nissan,VW,Lamborghini</p>
-                <table style="width: 100%; border: 0px solid black;">
-                    <tr style="">
-                        <td style="width: 50%; border: 0px solid black;">     
-                        <h4>Applications & Metallurgy</h4>
-                            <table style="padding-left:20px;">
-                                <?php for($i=0; $i<3; $i++): ?>
-                                <tr>
-                                    <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
-                                    <td style="border: 0px solid black;">Coffie</td>
-                                </tr>
-                                <?php endfor; ?>
-                            </table>
-                        </td>
-                        <td style="width: 50%;border: 0px solid black;">
-                        <h4>Product used</h4>
-                            <table style="padding-left:20px;">
-                                <?php for($i=0; $i<3; $i++): ?>
-                                <tr>
-                                    <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
-                                    <td style="border: 0px solid black;">Coffie</td>
-                                </tr>
-                                <?php endfor; ?>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <b>MWF Annual Consumption - XX KL</b>
-                <br><br>
-                <table style="border: solid 1px #5544DD; border-collapse: collapse;">
-                    <tr>
-                        <th>Suppier</th>
-                        <th>Product</th>
-                        <th>Annual Volume</th>
-                        <th>Share</th>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                </table>
-            <br>
-            <b>Rust Preventive: Annual consumption YYKL</b>
-                <br><br>
-                <table style="border: solid 1px #5544DD; border-collapse: collapse;">
-                    <tr>
-                        <th>Suppier</th>
-                        <th>Product</th>
-                        <th>Annual Volume</th>
-                        <th>Share</th>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                </table>
-         
-                <b>Hydraulic oil: Annual Consumption ZZKL</b>
-                <br><br>
-                <table style="border: solid 1px #5544DD; border-collapse: collapse;">
-                    <tr>
-                        <th>Suppier</th>
-                        <th>Product</th>
-                        <th>Annual Volume</th>
-                        <th>Share</th>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                </table>    
+        <p>Key client: Hyundai, Ford, Renault Nissan,VW,Lamborghini</p>
+        <table style="width: 100%; border: 0px solid black;">
+            <tr style="">
+                <td style="width: 50%; border: 0px solid black;">     
+                <h3>Applications & Metallurgy</h3>
+                    <table style="padding-left:20px;">
+                        <?php for($i=0; $i<3; $i++): ?>
+                        <tr>
+                            <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                            <td style="border: 0px solid black;">Coffie</td>
+                        </tr>
+                        <?php endfor; ?>
+                    </table>
+                </td>
+                <td style="width: 50%;border: 0px solid black;">
+                <h3>Product used</h3>
+                    <table style="padding-left:20px;">
+                        <?php for($i=0; $i<3; $i++): ?>
+                        <tr>
+                            <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                            <td style="border: 0px solid black;">Coffie</td>
+                        </tr>
+                        <?php endfor; ?>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p><strong>MWF Annual Consumption - XX KL</strong></p>
+        <table style="border: solid 1px #5544DD; border-collapse: collapse;">
+            <tr>
+                <th>Suppier</th>
+                <th>Product</th>
+                <th>Annual Volume</th>
+                <th>Share</th>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+        </table>
+            
+        <br>
+        <p><strong>Rust Preventive: Annual consumption YYKL</strong></p>
+        <table style="border: solid 1px #5544DD; border-collapse: collapse;">
+            <tr>
+                <th>Suppier</th>
+                <th>Product</th>
+                <th>Annual Volume</th>
+                <th>Share</th>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>xx</td>
+                <td>ABC</td>
+                <td>xxxx</td>
+                <td>70</td>
+            </tr>
+        </table>
+        <br>
+
+        <p><strong>Hydraulic oil: Annual Consumption ZZKL</strong></p>
+        <table style="border: solid 1px #5544DD; border-collapse: collapse;">
+            <tr>
+                <th>Suppier</th>
+                <th>Product</th>
+                <th>Annual Volume</th>
+                <th>Share</th>
+            </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>ABC</td>
+                    <td>xxxx</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>ABC</td>
+                    <td>xxxx</td>
+                    <td>70</td>
+                </tr>
+        </table>    
 </page> 
 
-<page pageset="old"> 
-    <div class="page-body">
-        <div class="section">
-           <div>
-                <!-- <img align="left" style="width: 40px; height:40px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Html2Pdf" > -->
-                <h2 align="left" >Castrol Value Offer</h2>
-                <p>Castrol would like to present a comprehensive offer to ABC Ltd</p>
-                <!-- <img align="left" style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Html2Pdf" > -->
-                <h4 align="left" >Application Guide</h4>
-                <P>CASTROL INDIA SALUTES MECHANICS BY LAUNCHING “CASTROL GARAGE GURU – THE SUPER MECHANIC SHOW” ON NATIONAL TELEVISION</P>
-                <ul>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                </ul>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                <h5>Assured Benefits</h5>
-                <ul>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                </ul>
-           </div>
-        </div>
-        <div class="section">
-            <h2>Proposed value benefit by application guide  XXXX</h2>
-            <div>
-            <!-- <img align="left" style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Html2Pdf" > -->
-            <h4 align="left" >Metal Working Fluid</h4>
-            </div>
-            
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <table style="border: solid 1px #5544DD; border-collapse: collapse;">
-                    <tr>
-                        <th>Application</th>
-                        <th>Metallurgy</th>
-                        <th>Machine Make</th>
-                        <th>No of Machines</th>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>xx</td>
-                        <td>ABC</td>
-                        <td>xxxx</td>
-                        <td>70</td>
-                    </tr>
-                </table>
-        </div>
+<page pageset="old">    
+    <table style="border: 0px solid black;">
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 50px; height:50px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;"><h3 >Castrol Value Offer</h3></td>
+        </tr>
+    </table>
+    <p style="padding-left:25px;">Castrol would like to present a comprehensive offer to ABC Ltd</p>
+   
+    <table style="border: 0px solid black;">
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 30px; height:30px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;"><h4 ><strong>Application Guide</strong></h4></td>
+        </tr>
+    </table>
+    <p style="padding-left:25px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    
+    <table style="border: 0px solid black;">
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+        </tr>
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+        </tr>
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+        </tr>
+    </table>
+    <div class="assured">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <h4>Assured Benefits</h4>
     </div>
+    <table style="border: 0px solid black;">
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+        </tr>
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+        </tr>
+    </table>
+    <h3>Proposed value benefit by application guide  XXXX</h3>
+
+    <table style="border: 0px solid black;">
+        <tr>
+            <td style="border: 0px solid black;"><img style="width: 30px; height:30px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+            <td style="border: 0px solid black;"><h4 ><strong>Metal Working Fluid</strong></h4></td>
+        </tr>
+    </table>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    <table style="border: solid 1px #5544DD; border-collapse: collapse;">
+        <tr>
+            <th>Application</th>
+            <th>Metallurgy</th>
+            <th>Machine Make</th>
+            <th>No of Machines</th>
+        </tr>
+        <tr>
+            <td>xx</td>
+            <td>ABC</td>
+            <td>xxxx</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>xx</td>
+            <td>ABC</td>
+            <td>xxxx</td>
+            <td>70</td>
+        </tr>
+    </table>
 </page> 
 
 <page pageset="old"> 
@@ -394,34 +406,70 @@ h1,h2,h3,h4,h5{
 <page pageset="old">  
     <div class="page-body">
         <div class="section">
-            <h2>Inventry Optimazation</h2>
-            <p>castrol proposes reduction in total inventory held by two initiatives</p>
-        
-            <ul>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-            </ul>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <table style="border: 0px solid black;">
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 40px; height:40px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;"><h3>Inventry Optimazation</h3></td>
+                </tr>
+            </table>
+            <p>Castrol proposes reduction in total inventory held by two initiatives</p>
+            <table style="border: 0px solid black;">
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                </tr>
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                </tr>
+            </table>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
 
         <div class="section">
-            <h2>Lube Trainer</h2>
+            <table style="border: 0px solid black;">
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 40px; height:40px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;"><h3>Lube Trainer</h3></td>
+                </tr>
+            </table>
             <p>castrol proposes reduction in total inventory held by two initiatives castrol proposes reduction in total inventory held by two initiatives</p>
-        
-            <ul>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-            </ul>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <table style="border: 0px solid black;">
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                </tr>
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                </tr>
+            </table>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
 
         <div class="section">
-            <h2>Other value adds provided by castrol</h2>
-            <ul>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-            </ul>
+            <table style="border: 0px solid black;">
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 40px; height:40px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;"><h3>Other value adds provided by castrol</h3></td>
+                </tr>
+            </table>
+            <table style="border: 0px solid black;">
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                </tr>
+                <tr>
+                    <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                </tr>
+
+                 <tr>
+                    <td style="border: 0px solid black;"><img style="width: 20px; height:20px;" src="<?php echo base_url(); ?>/assets/icon.jpg" alt="Logo Castrol" ></td>
+                    <td style="border: 0px solid black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                </tr>
+            </table>
+            <br>
             <table border='1'>
                     <tr>
                         <th>Application</th>
@@ -479,28 +527,54 @@ h1,h2,h3,h4,h5{
                     <td style="border: 0px solid black">INR XXXX</td>
                 </tr>
             </table>
-            <ul style="">
-                <li>omkesh test</li>
-                <li>omkesh test</li>
-                <li>omkesh test</li>
-                <li>omkesh test</li>
-            </ul>
         </div>
 
 
         <div class="section">
             <h2>Addtional Value Proposed</h2>
-            <ul>
+            <table style="border: 0px solid black;">
+                <tr>
+                    <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                    <td style="border: 0px solid black;">Zero incidences of misting</td>
+                </tr>
+                <tr>
+                    <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                    <td style="border: 0px solid black;">Boron frge product</td>
+                </tr>
+                <tr>
+                    <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                    <td style="border: 0px solid black;">Visits by castrol experts</td>
+                </tr>
+                <br> <br>
+                    <table style="border: 0px solid black;margin-left: 40px;">
+                        <tr>
+                            <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                            <td style="border: 0px solid black;">Boron frge product</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                            <td style="border: 0px solid black;">Boron frge product</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 0px solid black;"> <img style="height:20px;width:20px" src="<?php echo base_url(); ?>/assets/icon.jpg" alt=""> </td>
+                            <td style="border: 0px solid black;">Boron frge product</td>
+                        </tr>
+                    </table>
+                </table>
+            <!-- <ul>
                 <li>Zero incidences of misting</li>
                 <li>Boron frge product</li>
                 <li>Visits by castrol experts
-                    <ul style="padding:10px;">
+                    <ul>
                         <br>
                         <li>KAM - 4/QTR</li>
                         <li>KAM - 4/QTR</li>
-                        <li>KAM - 4/QTR</li>                    </ul>               
+                        <li>KAM - 4/QTR</li>                    
+                    </ul>               
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </page>
